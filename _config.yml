@@ -1,3 +1,7 @@
 theme: jekyll-theme-hacker
 title: NTU Autonomous Racing Team
 description: Taking theory and putting it into practice on the race track
+
+sidebars:
+  - _posts
+  - sponsors.md
