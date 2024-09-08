@@ -1,6 +1,2 @@
-Thanks for downloading this template!
+/NTU F1/10 website
 
-Template Name: NTU F1/10
-Template URL: https://bootstrapmade.com/NTU F1/10-bootstrap-blog-template/
-Author: BootstrapMade.com
-License: https://bootstrapmade.com/license/
