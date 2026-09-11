@@ -16,6 +16,17 @@ export interface PitNote {
 /** Newest first. Add new write-ups here and create a page under pit-notes/. */
 export const pitNotes: PitNote[] = [
   {
+    tag: "Recruitment",
+    date: "Sep 11",
+    year: "2026",
+    title: "Build, learn, race: join NTU DeepSpeed",
+    blurb:
+      "Our Recruitment & Hackathon Info Talk is on 17 Sep 2026, 5–6 PM at TCT LT — come find out what it takes to put a 1/10 scale autonomous race car on track.",
+    href: "/pit-notes/build-learn-race/",
+    thumb: "/assets/pit-notes/build-learn-race/thumb.jpg",
+    featured: true,
+  },
+  {
     tag: "Race report",
     date: "Sep 11",
     year: "2026",
@@ -24,7 +35,6 @@ export const pitNotes: PitNote[] = [
       "15th of 55 international teams and our first two head-to-head knockout wins — four days in Busan at the 29th RoboRacer competition, on a rebuilt car.",
     href: "/pit-notes/into-the-knockouts-at-ifac-2026/",
     thumb: "/assets/pit-notes/ifac-2026/team-with-cars.jpg",
-    featured: true,
   },
   {
     tag: "Explainer",

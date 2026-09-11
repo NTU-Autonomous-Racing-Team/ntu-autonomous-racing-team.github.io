@@ -1,0 +1,136 @@
+---
+import Base from "../../layouts/Base.astro";
+import { icons } from "../../components/icons";
+import { SITE } from "../../config";
+
+const REGISTER =
+  "https://forms.cloud.microsoft/pages/responsepage.aspx?id=SJPOFSq-K0aPwOF2WpsgSukf7rRe1gBGr3DNE6jFH_hUNzlNT1VUTk5FWE5NRUdLV0c2VUszVjMzNiQlQCN0PWcu&route=shorturl";
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Event",
+  name: "NTU DeepSpeed Recruitment & Hackathon Info Talk",
+  description:
+    "Build, learn, race — come find out what it takes to put a 1/10 scale autonomous race car on track with NTU DeepSpeed.",
+  image: new URL("/assets/pit-notes/build-learn-race/recruitment-poster.png", Astro.site).toString(),
+  startDate: "2026-09-17T17:00:00+08:00",
+  endDate: "2026-09-17T18:00:00+08:00",
+  eventStatus: "https://schema.org/EventScheduled",
+  eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+  location: {
+    "@type": "Place",
+    name: "TCT LT, Nanyang Technological University",
+    address: "50 Nanyang Avenue, Singapore 639798",
+  },
+  organizer: { "@type": "Organization", name: "NTU DeepSpeed", url: Astro.site?.toString() },
+  offers: {
+    "@type": "Offer",
+    url: REGISTER,
+    price: "0",
+    priceCurrency: "SGD",
+    availability: "https://schema.org/InStock",
+  },
+};
+---
+
+<Base
+  active="pit-notes"
+  title="Build, learn, race: join NTU DeepSpeed"
+  description="Our Recruitment & Hackathon Info Talk is on 17 Sep 2026, 5–6 PM at TCT LT. Come find out what it takes to put a 1/10 scale autonomous race car on track."
+  ogType="article"
+  ogImage="/assets/pit-notes/build-learn-race/thumb.jpg"
+>
+  <Fragment slot="head">
+    <meta property="article:published_time" content="2026-09-11" />
+    <script is:inline type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+  </Fragment>
+  <article class="article-wrap">
+    <a href="/pit-notes/" class="article-back">
+      <Fragment set:html={icons.arrowLeft()} />
+      All pit notes
+    </a>
+    <div class="hero-eyebrow" style="margin-bottom:12px;color:var(--accent)" data-reveal>
+      Recruitment · Sep 11 · 2026
+    </div>
+    <h1 style="font-size:clamp(40px,6vw,64px);margin-bottom:16px" data-reveal>
+      Build, learn, race: join NTU DeepSpeed
+    </h1>
+    <p class="hero-sub" style="margin-bottom:24px" data-reveal>
+      You can't break the speed limit on the road — but you can push a 1/10 scale autonomous race
+      car to its absolute limits on track. Come find out how.
+    </p>
+    <div class="article-byline" data-reveal>
+      <span>By the team</span>
+      <span>·</span>
+      <span>2 min read</span>
+    </div>
+    <figure class="article-figure wide">
+      <img
+        class="article-media"
+        data-reveal
+        src="/assets/pit-notes/build-learn-race/recruitment-poster.png"
+        alt="NTU DeepSpeed Recruitment Hackathon and Info Talk poster: 17 Sep 2026, 5:00–6:00 PM at TCT LT, with a QR code to register"
+      />
+      <figcaption>Scan the QR on the poster, or use the link below</figcaption>
+    </figure>
+    <div class="article-body">
+      <p>
+        NTU DeepSpeed is NTU's autonomous racing team, and we're looking for people who want to
+        dive into autonomous systems for real — not just read about them. Whether you want to build
+        race cars from scratch, learn the foundations of robotics, or compete internationally, our
+        Recruitment &amp; Hackathon Info Talk is where to start.
+      </p>
+      <div class="tele" style="margin-bottom:32px" data-reveal>
+        <div class="hero-eyebrow" style="margin-bottom:16px">Event details</div>
+        <div class="tele-row"><span class="k">Date</span><span class="v red">17 Sep 2026</span></div>
+        <div class="tele-row"><span class="k">Time</span><span class="v">5:00 – 6:00 PM</span></div>
+        <div class="tele-row"><span class="k">Location</span><span class="v">TCT LT</span></div>
+        <div class="tele-row"><span class="k">Who can come</span><span class="v">All are welcome</span></div>
+      </div>
+      <p style="margin-bottom:32px">
+        <a class="btn accent" href={REGISTER} rel="noopener" style="text-decoration:none">
+          Register for the info talk
+        </a>
+      </p>
+      <h2>What to expect</h2>
+      <ul>
+        <li>
+          <strong>Team &amp; project intro</strong> — who we are, what we stand for, and the
+          autonomous vehicles we build.
+        </li>
+        <li>
+          <strong>Past events &amp; competitions</strong> — our track record and the international
+          competitions we race in.
+        </li>
+        <li>
+          <strong>Hackathon details</strong> — the inside scoop on our upcoming hackathon and how
+          you can get involved.
+        </li>
+        <li>
+          <strong>What you can learn</strong> — the hands-on technical skills and teamwork you'll
+          pick up on the team.
+        </li>
+      </ul>
+      <h2>Curious to see the cars in action?</h2>
+      <p>
+        Watch our <a href="https://www.youtube.com/watch?v=6wFCLP-5xtA" rel="noopener">team intro
+        video</a> to see what we do, read <a href="/pit-notes/into-the-knockouts-at-ifac-2026/">our
+        race report from Busan</a>, or start with
+        <a href="/pit-notes/f1tenth-101/">F1TENTH 101</a> if the whole thing is new to you.
+      </p>
+      <p>
+        You can also reach us on
+        <a href={SITE.links.linkedin} rel="noopener">LinkedIn</a> or
+        <a href={SITE.links.instagram} rel="noopener">Instagram</a>, or just
+        <a href="/contact/">drop us a line</a>.
+      </p>
+      <p>We can't wait to meet you and start racing toward the future together.</p>
+    </div>
+    <div class="checkered" style="padding:24px 0">🏁</div>
+    <a class="btn ghost" href="/pit-notes/" style="text-decoration:none">All pit notes</a>
+  </article>
+</Base>
+
+<script>
+  import "../../scripts/reading-progress";
+</script>
