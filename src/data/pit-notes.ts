@@ -22,8 +22,8 @@ export const pitNotes: PitNote[] = [
     title: "Build, learn, race: join NTU DeepSpeed",
     blurb:
       "Our Recruitment & Hackathon Info Talk is on 17 Sep 2026, 5–6 PM at TCT LT — come find out what it takes to put a 1/10 scale autonomous race car on track.",
-    href: "/pit-notes/build-learn-race/",
-    thumb: "/assets/pit-notes/build-learn-race/thumb.jpg",
+    href: "/pit-notes/2026-recruitment/",
+    thumb: "/assets/pit-notes/2026-recruitment/thumb.jpg",
     featured: true,
   },
   {
@@ -33,8 +33,8 @@ export const pitNotes: PitNote[] = [
     title: "Into the knockouts at IFAC 2026",
     blurb:
       "15th of 55 international teams and our first two head-to-head knockout wins — four days in Busan at the 29th RoboRacer competition, on a rebuilt car.",
-    href: "/pit-notes/into-the-knockouts-at-ifac-2026/",
-    thumb: "/assets/pit-notes/ifac-2026/team-with-cars.jpg",
+    href: "/pit-notes/2026-ifac/",
+    thumb: "/assets/pit-notes/2026-ifac/team-with-cars.jpg",
   },
   {
     tag: "Explainer",
@@ -54,7 +54,7 @@ export const pitNotes: PitNote[] = [
     title: "Racing the full stack at ICRA 2026",
     blurb:
       "6th of 78 in sim qualifying, top-10 on the physical track, and our complete autonomy pipeline's first race — five days at the 27th RoboRacer competition in Vienna.",
-    href: "/pit-notes/racing-the-full-stack-at-icra-2026/",
-    thumb: "/assets/pit-notes/icra-2026/team-with-car.jpg",
+    href: "/pit-notes/2026-icra/",
+    thumb: "/assets/pit-notes/2026-icra/team-with-car.jpg",
   },
 ];

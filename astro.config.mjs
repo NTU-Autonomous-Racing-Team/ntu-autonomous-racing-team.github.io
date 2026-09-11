@@ -7,4 +7,9 @@ import sitemap from "@astrojs/sitemap";
 export default defineConfig({
   site: "https://ntudeepspeed.github.io",
   integrations: [sitemap()],
+  // Pit notes moved to <year>-<event> slugs. Only these two were ever deployed under
+  // their old URLs, so only these need to keep resolving.
+  redirects: {
+    "/pit-notes/racing-the-full-stack-at-icra-2026/": "/pit-notes/2026-icra/",
+  },
 });

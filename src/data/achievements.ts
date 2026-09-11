@@ -30,7 +30,7 @@ export const achievements: AchievementEntry[] = [
     loc: "IFAC 2026 @ Busan, Korea",
     result: "P15",
     detail: "15th of 55 teams; reached the BO32 head-to-head finals",
-    readMore: "/pit-notes/into-the-knockouts-at-ifac-2026/",
+    readMore: "/pit-notes/2026-ifac/",
   },
   {
     date: "Jun 2026",
@@ -39,7 +39,7 @@ export const achievements: AchievementEntry[] = [
     result: "P9",
     qualResult: "Q8/29",
     detail: "Qualified 8th of 29 teams; P9 in the Classic Cup",
-    readMore: "/pit-notes/racing-the-full-stack-at-icra-2026/",
+    readMore: "/pit-notes/2026-icra/",
   },
   {
     date: "May 2026",

@@ -37,7 +37,7 @@ export const RECRUITMENT = {
     time: "5:00 – 6:00 PM",
     venue: "TCT LT",
     /** The pit note carrying the poster and the full run-down. */
-    href: "/pit-notes/build-learn-race/",
+    href: "/pit-notes/2026-recruitment/",
   },
 } as const;
 
