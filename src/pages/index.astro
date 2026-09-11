@@ -4,6 +4,7 @@ import NoteCard from "../components/NoteCard.astro";
 import { icons } from "../components/icons";
 import { pitNotes } from "../data/pit-notes";
 import { achievementStats } from "../data/achievements";
+import { RECRUITMENT } from "../config";
 import { heroGlyphs } from "../data/hero-glyphs";
 
 const notesPreview = pitNotes.slice(0, 3);
@@ -163,16 +164,37 @@ const penMargin = 200; // let round caps run past the viewBox without being clip
       <h2 class="sec-h">Join the team</h2>
     </div>
     <div data-reveal>
-      <p class="sec-lede">
-        Applications open on a yearly basis. We expect ROS 2 and comfort with C++ or Python. Follow
-        our social media for when positions open.
-      </p>
-      <span
-        class="btn accent"
-        aria-disabled="true"
-        style="text-decoration:none;margin-top:24px;opacity:0.4;cursor:not-allowed;pointer-events:none"
-        >Application cycle over — follow on social media for more</span
-      >
+      {RECRUITMENT.open ? (
+        <>
+          <p class="sec-lede">
+            We're recruiting. Come to our Recruitment &amp; Hackathon Info Talk on{" "}
+            {RECRUITMENT.infoTalk.date}, {RECRUITMENT.infoTalk.time} at{" "}
+            {RECRUITMENT.infoTalk.venue} — all are welcome. No autonomy experience needed; ROS 2 and
+            comfort with C++ or Python will help you hit the ground running.
+          </p>
+          <div class="sec-actions">
+            <a class="btn accent" href={RECRUITMENT.registerUrl} rel="noopener" style="text-decoration:none">
+              Register for the info talk
+            </a>
+            <a class="btn ghost" href={RECRUITMENT.infoTalk.href} style="text-decoration:none">
+              What to expect
+            </a>
+          </div>
+        </>
+      ) : (
+        <>
+          <p class="sec-lede">
+            Applications open on a yearly basis. We expect ROS 2 and comfort with C++ or Python.
+            Follow our social media for when positions open.
+          </p>
+          <span
+            class="btn accent"
+            aria-disabled="true"
+            style="text-decoration:none;margin-top:24px;opacity:0.4;cursor:not-allowed;pointer-events:none"
+            >Application cycle over — follow on social media for more</span
+          >
+        </>
+      )}
     </div>
   </section>
 

@@ -24,6 +24,23 @@ export const SITE = {
   },
 } as const;
 
+/**
+ * Recruitment drive. Set `open: false` when the cycle closes — the Home "Join the team"
+ * section falls back to its "follow us for the next round" state.
+ */
+export const RECRUITMENT = {
+  open: true,
+  registerUrl:
+    "https://forms.cloud.microsoft/pages/responsepage.aspx?id=SJPOFSq-K0aPwOF2WpsgSukf7rRe1gBGr3DNE6jFH_hUNzlNT1VUTk5FWE5NRUdLV0c2VUszVjMzNiQlQCN0PWcu&route=shorturl",
+  infoTalk: {
+    date: "17 Sep 2026",
+    time: "5:00 – 6:00 PM",
+    venue: "TCT LT",
+    /** The pit note carrying the poster and the full run-down. */
+    href: "/pit-notes/build-learn-race/",
+  },
+} as const;
+
 export type PageId = "home" | "achievements" | "pit-notes" | "members" | "contact";
 
 export const NAV_ITEMS: ReadonlyArray<{ id: PageId; label: string; href: string }> = [

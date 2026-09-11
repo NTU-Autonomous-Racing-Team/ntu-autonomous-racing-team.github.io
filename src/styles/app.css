@@ -255,6 +255,8 @@ body {
   letter-spacing: -0.01em; margin: 0 0 16px;
 }
 .sec-lede { font-size: 17px; line-height: 1.5; color: var(--fg-muted); max-width: 50ch; }
+/* Row of CTAs under a section lede — wraps rather than overflowing on narrow screens. */
+.sec-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
 
 /* ===== Buttons (reuse) ===== */
 .btn {
