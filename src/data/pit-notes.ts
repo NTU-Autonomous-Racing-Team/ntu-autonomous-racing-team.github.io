@@ -16,6 +16,17 @@ export interface PitNote {
 /** Newest first. Add new write-ups here and create a page under pit-notes/. */
 export const pitNotes: PitNote[] = [
   {
+    tag: "Race report",
+    date: "Sep 11",
+    year: "2026",
+    title: "Into the knockouts at IFAC 2026",
+    blurb:
+      "15th of 55 international teams and our first two head-to-head knockout wins — four days in Busan at the 29th RoboRacer competition, on a rebuilt car.",
+    href: "/pit-notes/into-the-knockouts-at-ifac-2026/",
+    thumb: "/assets/pit-notes/ifac-2026/team-with-cars.jpg",
+    featured: true,
+  },
+  {
     tag: "Explainer",
     date: "Aug 27",
     year: "2026",
@@ -35,6 +46,5 @@ export const pitNotes: PitNote[] = [
       "6th of 78 in sim qualifying, top-10 on the physical track, and our complete autonomy pipeline's first race — five days at the 27th RoboRacer competition in Vienna.",
     href: "/pit-notes/racing-the-full-stack-at-icra-2026/",
     thumb: "/assets/pit-notes/icra-2026/team-with-car.jpg",
-    featured: true,
   },
 ];

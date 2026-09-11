@@ -29,7 +29,8 @@ export const achievements: AchievementEntry[] = [
     name: "29th Roboracer Autonomous Racing Competition",
     loc: "IFAC 2026 @ Busan, Korea",
     result: "P15",
-    detail: "15th of 54 teams",
+    detail: "15th of 55 teams; reached the BO32 head-to-head finals",
+    readMore: "/pit-notes/into-the-knockouts-at-ifac-2026/",
   },
   {
     date: "Jun 2026",

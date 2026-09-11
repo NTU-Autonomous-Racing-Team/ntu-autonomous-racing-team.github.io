@@ -1,0 +1,168 @@
+---
+import Base from "../../layouts/Base.astro";
+import { icons } from "../../components/icons";
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Into the knockouts at IFAC 2026",
+  description:
+    "15th of 55 international teams and our first two head-to-head knockout wins — four days in Busan at the 29th RoboRacer competition, on a rebuilt car.",
+  image: new URL("/assets/pit-notes/ifac-2026/team-with-cars.jpg", Astro.site).toString(),
+  datePublished: "2026-09-11",
+  author: { "@type": "Organization", name: "NTU DeepSpeed", url: Astro.site?.toString() },
+  publisher: { "@type": "Organization", name: "NTU DeepSpeed", url: Astro.site?.toString() },
+  mainEntityOfPage: new URL(Astro.url.pathname, Astro.site).toString(),
+};
+---
+
+<Base
+  active="pit-notes"
+  title="Into the knockouts at IFAC 2026"
+  description="15th of 55 international teams and our first two head-to-head knockout wins — four days in Busan at the 29th RoboRacer competition, on a rebuilt car."
+  ogType="article"
+  ogImage="/assets/pit-notes/ifac-2026/team-with-cars.jpg"
+>
+  <Fragment slot="head">
+    <meta property="article:published_time" content="2026-09-11" />
+    <script is:inline type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+  </Fragment>
+  <article class="article-wrap">
+    <a href="/pit-notes/" class="article-back">
+      <Fragment set:html={icons.arrowLeft()} />
+      All pit notes
+    </a>
+    <div class="hero-eyebrow" style="margin-bottom:12px;color:var(--accent)" data-reveal>
+      Race report · Sep 11 · 2026
+    </div>
+    <h1 style="font-size:clamp(40px,6vw,64px);margin-bottom:16px" data-reveal>
+      Into the knockouts at IFAC 2026
+    </h1>
+    <p class="hero-sub" style="margin-bottom:24px" data-reveal>
+      Our second race of the year: four days in Busan at the 29th RoboRacer Autonomous Racing
+      Competition, on a rebuilt platform and with a lot more confidence.
+    </p>
+    <div class="article-byline" data-reveal>
+      <span>By the Busan crew</span>
+      <span>·</span>
+      <span>4 min read</span>
+    </div>
+    <figure class="article-figure">
+      <img
+        class="article-media"
+        data-reveal
+        src="/assets/pit-notes/ifac-2026/team-with-cars.jpg"
+        alt="Five NTU DeepSpeed members holding their cars beside the track in Busan"
+      />
+      <figcaption>The Busan crew, cars in hand</figcaption>
+    </figure>
+    <div class="article-body">
+      <p>
+        We're back from Busan after racing at the 29th RoboRacer Competition, IFAC 2026. 🇰🇷 This
+        was our second race of the year — after ICRA in Vienna back in June, we brought a rebuilt
+        platform and a lot more confidence to Korea.
+      </p>
+      <div class="tele" style="margin-bottom:32px" data-reveal>
+        <div class="hero-eyebrow" style="margin-bottom:16px">IFAC 2026 · results</div>
+        <div class="tele-row"><span class="k">Head-to-head</span><span class="v red">BO32 Finals</span></div>
+        <div class="tele-row"><span class="k">Knockout races won</span><span class="v">2</span></div>
+        <div class="tele-row"><span class="k">Overall</span><span class="v red">15th / 55</span></div>
+      </div>
+      <p>
+        We advanced to the BO32 Head-to-Head Finals, winning our first two knockout races as a
+        team, and finished 15th overall out of 55 international teams.
+      </p>
+      <figure class="article-figure">
+        <img
+          class="article-media"
+          data-reveal
+          src="/assets/pit-notes/ifac-2026/head-to-head.jpg"
+          alt="Two cars running side by side on the Busan track during a head-to-head race"
+        />
+        <figcaption>Head-to-head knockouts</figcaption>
+      </figure>
+      <h2>A rebuilt car</h2>
+      <p>
+        One of the biggest changes since ICRA: we upgraded our hardware. Onboard compute went from
+        our original NVIDIA Jetson to an Intel NUC, alongside a full swap of our servos and motor.
+        That gave us a more reliable, more capable platform to actually push in Busan.
+      </p>
+      <figure class="article-figure">
+        <img
+          class="article-media"
+          data-reveal
+          src="/assets/pit-notes/ifac-2026/car-on-track.jpg"
+          alt="The rebuilt NTU DeepSpeed car running on the concrete floor of the Busan venue"
+        />
+        <figcaption>The rebuilt platform, on track</figcaption>
+      </figure>
+      <p>
+        On the software side, the biggest shift was building our own Waypoint Studio. What used to
+        be countless hours of manual trajectory generation at ICRA became a workflow where we could
+        iterate cleanly and apply tweaks straight from what we saw in practice sessions.
+      </p>
+      <figure class="article-figure">
+        <img
+          class="article-media"
+          data-reveal
+          src="/assets/pit-notes/ifac-2026/pit-laptops.jpg"
+          alt="Two team members working on laptops trackside between runs"
+        />
+        <figcaption>Iterating between practice sessions</figcaption>
+      </figure>
+      <h2>Not everything goes to plan</h2>
+      <p>
+        On day one we found out the tires we'd flown in from Singapore had no grip on the venue's
+        concrete floor. UNICORN Racing offered to help and got us a set that worked perfectly.
+        We're genuinely grateful for that.
+      </p>
+      <figure class="article-figure">
+        <img
+          class="article-media"
+          data-reveal
+          src="/assets/pit-notes/ifac-2026/pit-crew.jpg"
+          alt="The team gathered around their pit desk watching a run"
+        />
+        <figcaption>In the pits</figcaption>
+      </figure>
+      <h2>How far the field has come</h2>
+      <p>
+        Beyond the results, this week was a reminder of just how far the field has come. We were
+        genuinely surprised by how many teams could avoid obstacles cleanly at speeds much higher
+        than we expected. Watching that, taking notes in the pits, and getting pushed to be better
+        by teams from around the world is exactly what makes RoboRacer special. 🔥
+      </p>
+      <figure class="article-figure">
+        <img
+          class="article-media"
+          data-reveal
+          src="/assets/pit-notes/ifac-2026/arena-group.jpg"
+          alt="All 55 competing teams gathered on the track for a group photo under the IFAC 2026 banner"
+        />
+        <figcaption>The RoboRacer field at IFAC 2026</figcaption>
+      </figure>
+      <h2>Thank you</h2>
+      <p>
+        Huge thanks to the team: Ting-Ju Chen, Yun-Tung Lee, Nathan Lee, Abhiram Chennupati,
+        Sarvajana Hari, Kah Lok Wong, and Baba Moolya. We would not have been able to achieve this
+        without you.
+      </p>
+      <p>
+        A special thanks to the NTU College of Computing and Data Science for providing the testing
+        venue and resources that made this run possible.
+      </p>
+      <p>
+        Finally, thank you to the RoboRacer Foundation and the IFAC 2026 organizers for running
+        such a smooth, well-organized event for 55 teams from start to finish — and to the teams we
+        competed against, for making it a genuinely welcoming community off the track.
+      </p>
+      <p>See you at the next starting line. 🏁🏎</p>
+    </div>
+    <div class="checkered" style="padding:24px 0">🏁</div>
+    <a class="btn ghost" href="/pit-notes/" style="text-decoration:none">All pit notes</a>
+  </article>
+</Base>
+
+<script>
+  import "../../scripts/reading-progress";
+</script>
