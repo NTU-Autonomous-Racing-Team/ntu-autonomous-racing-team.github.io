@@ -8,7 +8,7 @@ const articleSchema = {
   headline: "Into the knockouts at IFAC 2026",
   description:
     "15th of 55 international teams and our first two head-to-head knockout wins — four days in Busan at the 29th RoboRacer competition, on a rebuilt car.",
-  image: new URL("/assets/pit-notes/ifac-2026/team-with-cars.jpg", Astro.site).toString(),
+  image: new URL("/assets/pit-notes/ifac-2026/banner.jpg", Astro.site).toString(),
   datePublished: "2026-09-11",
   author: { "@type": "Organization", name: "NTU DeepSpeed", url: Astro.site?.toString() },
   publisher: { "@type": "Organization", name: "NTU DeepSpeed", url: Astro.site?.toString() },
@@ -21,7 +21,7 @@ const articleSchema = {
   title="Into the knockouts at IFAC 2026"
   description="15th of 55 international teams and our first two head-to-head knockout wins — four days in Busan at the 29th RoboRacer competition, on a rebuilt car."
   ogType="article"
-  ogImage="/assets/pit-notes/ifac-2026/team-with-cars.jpg"
+  ogImage="/assets/pit-notes/ifac-2026/banner.jpg"
 >
   <Fragment slot="head">
     <meta property="article:published_time" content="2026-09-11" />
@@ -47,14 +47,14 @@ const articleSchema = {
       <span>·</span>
       <span>4 min read</span>
     </div>
-    <figure class="article-figure">
+    <figure class="article-figure wide">
       <img
         class="article-media"
         data-reveal
-        src="/assets/pit-notes/ifac-2026/team-with-cars.jpg"
-        alt="Five NTU DeepSpeed members with their car in front of the IFAC 2026 RoboRacer backdrop"
+        src="/assets/pit-notes/ifac-2026/banner.jpg"
+        alt="IFAC Busan, South Korea — the NTU DeepSpeed crew with their cars, over a three-stage run: 01 pre-race, 02 practice day, 03 head to head"
       />
-      <figcaption>The Busan crew, car in hand</figcaption>
+      <figcaption>IFAC 2026 · Busan, South Korea</figcaption>
     </figure>
     <div class="article-body">
       <p>
@@ -151,6 +151,15 @@ const articleSchema = {
         <figcaption>The hall at BEXCO, Busan</figcaption>
       </figure>
       <h2>Thank you</h2>
+      <figure class="article-figure">
+        <img
+          class="article-media"
+          data-reveal
+          src="/assets/pit-notes/ifac-2026/team-with-cars.jpg"
+          alt="Five NTU DeepSpeed members with their car in front of the IFAC 2026 RoboRacer backdrop"
+        />
+        <figcaption>The Busan crew, car in hand</figcaption>
+      </figure>
       <p>
         Huge thanks to the team: Ting-Ju Chen, Yun-Tung Lee, Nathan Lee, Abhiram Chennupati,
         Sarvajana Hari, Kah Lok Wong, and Baba Moolya. We would not have been able to achieve this
