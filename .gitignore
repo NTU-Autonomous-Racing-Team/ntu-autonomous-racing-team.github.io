@@ -4,3 +4,5 @@ dist/
 *.local
 .DS_Store
 .playwright-mcp/
+# Raw photo-shoot originals (crops live in public/assets/team/)
+Chosen Personal Pics/
