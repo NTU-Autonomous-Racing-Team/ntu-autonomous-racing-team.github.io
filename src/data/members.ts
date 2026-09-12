@@ -36,7 +36,7 @@ export const team: Member[] = [
     role: "Mentor",
     dept: "PhD, IGP-ERI@N",
     linkedin: "https://www.linkedin.com/in/raditya-chema-hafizh-pradigta-7b4ba4190",
-    photo: "/assets/team/raditya-crop.png",
+    photo: "/assets/team/chema.webp",
   },
   {
     name: "Ting-Ju Chen",
