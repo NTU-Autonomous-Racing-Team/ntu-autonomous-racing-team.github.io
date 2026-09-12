@@ -13,6 +13,11 @@ export interface Member {
   dept: string;
   linkedin?: string;
   photo?: string;
+  /**
+   * How the photo fills the 4:3 card frame. Defaults to "cover" (edge to
+   * edge); use "contain" for headshots already framed too tight to crop.
+   */
+  fit?: "cover" | "contain";
   /** Optional saved crop for the photo (from the design's image slots). */
   crop?: SlotCrop;
 }
@@ -24,6 +29,7 @@ export const team: Member[] = [
     dept: "College of Computing and Data Science",
     linkedin: "https://www.linkedin.com/in/arvind-easwaran-066544292",
     photo: "/assets/team/team-1.jpg",
+    fit: "contain",
   },
   {
     name: "Raditya Chema Hafizh Pradigta",

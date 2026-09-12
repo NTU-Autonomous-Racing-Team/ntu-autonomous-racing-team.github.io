@@ -24,7 +24,7 @@ const linkProps = m.linkedin
 <Tag class="member" data-reveal {...linkProps}>
   <div class="ph" style="padding:0">
     {m.photo
-      ? <img src={m.photo} alt={m.name} loading="lazy" style={cropStyle} />
+      ? <img src={m.photo} alt={m.name} loading="lazy" class={m.fit === "contain" ? "fit-contain" : undefined} style={cropStyle} />
       : <span class="initials">{initials}</span>}
   </div>
   <div class="meta">
